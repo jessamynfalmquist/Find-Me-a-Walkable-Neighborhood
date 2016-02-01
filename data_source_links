@@ -1,0 +1,10 @@
+# Data Sources:
+
+# Zillow API
+http://www.zillow.com/howto/api/APIOverview.htm  # Neighborhood Data (ESRI shape files)
+
+# WalkScore API
+https://www.walkscore.com/professional/api.php
+
+# Hennepin County address data
+http://www.hennepin.us/gisopendata  # Address Point Data (ESRI shape files)

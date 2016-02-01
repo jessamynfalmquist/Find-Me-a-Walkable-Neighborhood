@@ -1,1 +1,3 @@
 # Find-Me-a-Walkable-Neighborhood
+
+This repository contains data and a script for an app that recommends rental listings based on the most walkable neighborhood in the city of interest. The app combines neighborhood data (Zillow) and address information (Hennepin County, MN), with WalkScore information to recommend a "most walkable" neighborhood, and to perform a Craigslist search for rentals in that neighborhood. The top 10 (or max n) listings in that neighborhood (which also satisfy several user-entered criteria; e.g., price range, minimum number of bedrooms, etc) are opened in the user's web browser.

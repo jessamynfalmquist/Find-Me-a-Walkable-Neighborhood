@@ -3,6 +3,9 @@
 # Zillow API
 http://www.zillow.com/howto/api/APIOverview.htm  # Neighborhood Data (ESRI shape files)
 
+# Zillow neighborhood data
+http://www.zillow.com/howto/api/neighborhood-boundaries.htm
+
 # WalkScore API
 https://www.walkscore.com/professional/api.php
 

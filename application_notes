@@ -1,0 +1,35 @@
+# Notes about this application:
+
+# This is the alpha version of an application recommending a neighborhood and generating
+# craigslist listings for a user, based on: 
+#   - the city and state they want to move to
+#   - their desired rent range [min max] 
+#   - the minimum desired number of bedrooms and/or bathrooms (optional)
+#   - WalkScore
+
+# To test the app, fill in sections 2-4. Some notes:
+# 2. Default rental features are included (Note: the current version will only work for cities in Hennepin county)
+# 3. If the associated .Rda files have not been downloaded, set "compute_" variables to TRUE (Note: ~60min run time total)
+# 4. API keys for both Zillow and WalkScore will need to be input (links included below)
+
+# The application currently combines information about neighborhood boundaries,  
+# neighborhood walkability and current rental listing prices/features, to help a 
+# user select (and view) listings
+
+# The application finds neighborhoods in the city of interest and generates an approximation 
+# of a neighborhood-level WalkScore (for the moment, based on the WS of the closest address to the
+# neighborhood centroid). The app then queries Craigslist rentals in the top 10 neighborhoods 
+# (in terms of neighborhood WalkScore), which match the users specifications (e.g., price range, 
+# num bedrooms,...). WalkScores are calculated for the property listings found, and the 
+# neighborhood with the highest median WalkScore is chosen as the recommended neighborhood. 
+# Last, the top 10 (or max n) listings are opened in a browser for the user.
+
+# Additional information of potential use in further development of the app: 
+#   - Transit Scores (property and/or neighborhood level; WalkScore Transit Score API)
+#   - average Yelp rating of nearby restaurants (Yelp public data)
+#   - neighborhood crime rates (FBI Uniform Crime Reports, local sources, potentially WalkScore API in future)
+#   - school district ratings (National Center for Education Statistics, US Census Bureau)
+#   - activity-based metrics (e.g., pedestrian-friendliness, "runnability/bikeability"; RunKeeper API, Strava API, WalkScore Professional)
+
+# Future developments may also include listings for sale (e.g., using Zillow API, Trulia), 
+# which have not yet been implemented, given daily API query limits (vs. Craigslist web-scraping)
